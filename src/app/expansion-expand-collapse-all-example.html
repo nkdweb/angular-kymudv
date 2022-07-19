@@ -1,0 +1,36 @@
+<div class="example-action-buttons">
+  <button mat-button (click)="accordion.openAll()">Expand All</button>
+  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+</div>
+<!-- #docregion multi -->
+<mat-accordion class="example-headers-align" multi>
+<!-- #enddocregion multi -->
+  <mat-expansion-panel class="customPanel">
+    <mat-expansion-panel-header class="changeHeader">
+      <mat-panel-title>
+        Personal
+      </mat-panel-title>
+      <!-- <mat-panel-description>
+        Type your name and age
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description> -->
+    </mat-expansion-panel-header>
+
+    <mat-form-field appearance="fill">
+      <mat-label>First name</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Age</mat-label>
+      <input matInput type="number" min="1">
+    </mat-form-field>
+
+  </mat-expansion-panel>
+<!-- #docregion disabled -->
+
+
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
